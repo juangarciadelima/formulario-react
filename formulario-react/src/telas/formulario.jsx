@@ -74,15 +74,15 @@ function Formulario() {
     <h1> Formulário Top</h1>
     <form>
     
-        <input onChange={onChangeUm} type="text" name="nome" id="1" />
-        <input onChange={onChangeDois} type="number" name="idade" id="2" />
-        <input onChange={onChangeTres} type="tel" name="telefone" id="3" />
-        <input onChange={onChangeQuatro} type="text" name="cidade" id="4" />
-        <input onChange={onChangeCinco} type="email" name="email" id="5" />
-        <input onChange={onChangeSeis} type="checkbox" name="emprego" id="6" />
-        <input onChange={onChangeSete} type="date" name="dataNascimento" id="7" />
-        <input onChange={onChangeOito} type="text" name="endereco" id="8" />
-        <input onChange={onChangeNove} type="text" name="estado" id="9" />
+        <input onChange={onChangeUm} type="text" name="nome" id="a" placeholder="Digite Seu Nome"/>
+        <input onChange={onChangeDois} type="number" name="idade" id="b" placeholder="Coloque Sua Idade"/>
+        <input onChange={onChangeTres} type="tel" name="telefone" id="c" placeholder="Coloque Seu Numero"/>
+        <input onChange={onChangeQuatro} type="text" name="cidade" id="d" placeholder="Coloque Sua Cidade" />
+        <input onChange={onChangeCinco} type="email" name="email" id="e" placeholder="Coloque Seu Email"/>
+        <input onChange={onChangeSeis} type="checkbox" name="emprego" id="f" />
+        <input onChange={onChangeSete} type="date" name="dataNascimento" id="g" placeholder="Quando Voce Nasceu"/>
+        <input onChange={onChangeOito} type="text" name="endereco" id="h"  placeholder="Onde Moras, Meu Templário"/>
+        <input onChange={onChangeNove} type="text" name="estado" id="i" placeholder= "Voce Mora em qual estado?"/>
 
         <p>Meu nome é {pessoa.nome}</p>
         <p>Minha Idade é {pessoa.idade}</p>
