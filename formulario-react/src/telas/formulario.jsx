@@ -90,6 +90,7 @@ function Formulario() {
         <p>Eu nasci em {pessoa.dataNascimento}</p>
         <p>Moro aqui : {pessoa.endereco}</p>
         <p>Amo esse estado aqui : {pessoa.estado}</p>
+        <p>{pessoa.emprego}</p>
 
         
 
