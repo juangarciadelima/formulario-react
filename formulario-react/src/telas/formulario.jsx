@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function Formulario() {
     const [pessoa, alteraPessoa] = useState({})
+    const [empregado, alteraEmpregado] = useState({})
 
     function onChangeUm(event) {
         alteraPessoa({
@@ -39,7 +40,8 @@ function Formulario() {
     }
 
     function onChangeSeis(event){
-        alteraPessoa({
+        alteraEmpregado({
+            ...pessoa,
             empregado: event.target.checked,
         })
     }
@@ -90,7 +92,7 @@ function Formulario() {
         <p>Eu nasci em {pessoa.dataNascimento}</p>
         <p>Moro aqui : {pessoa.endereco}</p>
         <p>Amo esse estado aqui : {pessoa.estado}</p>
-        <p>{pessoa.emprego}</p>
+        {empregado && <p> {pessoa.nome} está atualmente empregado</p>}
 
         
 
