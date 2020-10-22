@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 function Formulario() {
     const [pessoa, alteraPessoa] = useState({})
-    const [empregado, alteraEmpregado] = useState({})
 
     function onChangeUm(event) {
         alteraPessoa({
@@ -40,7 +39,7 @@ function Formulario() {
     }
 
     function onChangeSeis(event){
-        alteraEmpregado({
+        alteraPessoa({
             ...pessoa,
             empregado: event.target.checked,
         })
@@ -79,7 +78,7 @@ function Formulario() {
         <input onChange={onChangeTres} type="tel" name="telefone" id="c" placeholder="Coloque Seu Numero"/>
         <input onChange={onChangeQuatro} type="text" name="cidade" id="d" placeholder="Coloque Sua Cidade" />
         <input onChange={onChangeCinco} type="email" name="email" id="e" placeholder="Coloque Seu Email"/>
-        <input onChange={onChangeSeis} type="checkbox" name="emprego" id="f" />
+        <input onChange={onChangeSeis} type="checkbox"  id="f" />
         <input onChange={onChangeSete} type="date" name="dataNascimento" id="g" placeholder="Quando Voce Nasceu"/>
         <input onChange={onChangeOito} type="text" name="endereco" id="h"  placeholder="Onde Moras, Meu Templário"/>
         <input onChange={onChangeNove} type="text" name="estado" id="i" placeholder= "Voce Mora em qual estado?"/>
@@ -92,7 +91,7 @@ function Formulario() {
         <p>Eu nasci em {pessoa.dataNascimento}</p>
         <p>Moro aqui : {pessoa.endereco}</p>
         <p>Amo esse estado aqui : {pessoa.estado}</p>
-        {empregado && <p> {pessoa.nome} está atualmente empregado</p>}
+        <p>{pessoa.nome} esta atualmente {pessoa.empregado ? "Empregado" : "Desempregado"} </p>
 
         
 
