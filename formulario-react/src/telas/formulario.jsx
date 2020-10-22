@@ -68,14 +68,17 @@ function Formulario() {
 
 
 
-    return <form>
+    return <>
+    <h1> Formulário Top</h1>
+    <form>
+    
         <input onChange={onChangeUm} type="text" name="nome" id="1" />
         <input onChange={onChangeDois} type="number" name="idade" id="2" />
         <input onChange={onChangeTres} type="number" name="telefone" id="3" />
         <input onChange={onChangeQuatro} type="text" name="cidade" id="4" />
         <input onChange={onChangeCinco} type="email" name="email" id="5" />
         <input onChange={onChangeSeis} type="checkbox" name="emprego" id="6" />
-        <input onChange={onChangeSete} type="text" name="dataNascimento" id="7" />
+        <input onChange={onChangeSete} type="date" name="dataNascimento" id="7" />
         <input onChange={onChangeOito} type="text" name="endereco" id="8" />
         <input onChange={onChangeNove} type="text" name="estado" id="9" />
 
@@ -91,6 +94,7 @@ function Formulario() {
         
 
     </form>
+    </>
 }
 
 export default Formulario
